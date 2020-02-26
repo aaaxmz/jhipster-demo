@@ -1,0 +1,65 @@
+
+/** 账单特批 **/
+entity examineDealy{
+    /** 特批类型 */
+    examinedType String;
+    /** 客户id */
+    customerId Long;
+    /** 客户名称 */
+    customerName String;
+    /** 申请原因 */
+    reason String;
+    /** 文件 */
+    examineFile String;
+    /** 总金额 */
+    totalAmount BigDecimal;
+    /** 房间数量 */
+    roomCount Integer;
+    /** 租户数量 */
+    tenantryCount Integer;
+    /** 拒绝原因 */
+    rejectReason String;
+    /** 审核人姓名 */
+    verifyer String;
+    /** 审核时间 */
+    verifyTime Long;
+    /** 审核状态 */
+    verifyState String;
+    /** 申请人 */
+    applicant String;
+    /** 申请时间 */
+    applicationTime Long;
+    /** 账单数量 */
+    billCount Integer;
+    /** 有效期 */
+    validityTime Long;
+}
+
+/** 账单特批 **/
+entity examineBill{
+/** 特批类型 */
+    /** 合同编号 */
+    contractNumber String;
+    /** 客合同id */
+    contractId Long;
+    /** 客合同id */
+    customerId Long;
+    /** 客户名称 */
+    customerName Long;
+    /** 费用类型 */
+    feeType String;
+    /** 金额 */
+    amount String;
+    /** 付款开始日期 */
+    paymentPeriodStart Long;
+    /** 付款周期结束日期 */
+    paymentPeriodEnd Long;
+    /** 逾期日期类型 */
+    promptType Long;
+    /** 房间数量 */
+    roomCount Integer;
+    /** 租户数量 */
+    tenantryCount Integer;
+    /** 主表id */
+    examineDealy Long
+}
